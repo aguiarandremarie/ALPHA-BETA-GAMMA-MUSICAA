@@ -28,6 +28,16 @@
                                      lecteur.load();
                                      lecteur.play();
                                     }
+        function ouvrirVideo() {
+               const video = document.getElementById("lecteur");
+               video.src = "Vidéo/VIDEO 5.mp4";
+            video.load();
+            video.play();
+}
+
+
+
+        
 
         if (page=== "accueil") { contenu.innerHTML = "<h1>Bienvenue sur mon site d'arts et métiers</h1><p>Tendances musicales et professionnelles</p>"; } 
         
@@ -57,10 +67,11 @@
          
            <br>
   
-          <button onclick="ouvrir(Video/VIDEO 5)">Video 5</button><br>
+          <button onclick="ouvrirVideo('Video/VIDEO 5.mp4')">Video 5</button><br>
+
         
           
-          <button onclick="lire(Audio/AUDIO 5)">Audio 5</button><br>
+          <button onclick="lireAudio('Audio/AUDIO 5.mp3')">Audio 5</button><br>
             
       </h3> </div>
       
