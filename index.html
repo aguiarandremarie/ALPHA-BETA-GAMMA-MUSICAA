@@ -18,7 +18,17 @@
 
     <script>
 
-       function afficher(page) {let contenu=document.getElementById("contenu");
+       function ouvrirVideo(numero) {let lecteur=document.getElementById("Video");
+                                     lecteur.src="Video/VIDEO" + numero + " .mp4";
+                                     lecteur.load();
+                                     lecteur.play();
+                                    }
+
+        function ouvrirAudio(numero){let lecteur=document.getElementById("audio"; 
+                                     lecteur.src="Audio/AUDIO" + numero + " .mp3";
+                                     lecteur.load();
+                                     lecteur.play();
+                                    }
 
         if (page=== "accueil") { contenu.innerHTML = "<h1>Bienvenue sur mon site d'arts et métiers</h1><p>Tendances musicales et professionnelles</p>"; } 
         
