@@ -17,6 +17,14 @@
        <h2 ><img src="Images/RAINBOW.jpeg" width="100%" height="150px"></h2>
 
     <script>
+function ouvrirVideo(numero) {
+    const lecteur = document.getElementById("lecteur");
+
+    lecteur.src = "Video/VIDEO " + numero + ".mp4";
+
+    lecteur.load();
+    lecteur.play();
+}
 
        function ouvrirVideo(numero) {let lecteur=document.getElementById("Video");
                                      lecteur.src="Video/VIDEO" + numero + " .mp4";
